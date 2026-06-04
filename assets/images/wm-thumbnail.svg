@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="300" viewBox="0 0 440 300" role="img" aria-label="TODO replace with world model thumbnail">
+  <rect width="440" height="300" fill="#f2f5f7"/>
+  <rect x="28" y="28" width="386" height="246" fill="#ffffff" stroke="#c8d0d8"/>
+  <circle cx="118" cy="112" r="30" fill="#1772d2" opacity="0.22"/>
+  <circle cx="220" cy="150" r="46" fill="#1772d2" opacity="0.14"/>
+  <circle cx="312" cy="96" r="24" fill="#1772d2" opacity="0.28"/>
+  <path d="M118 112 L220 150 L312 96" fill="none" stroke="#1772d2" stroke-width="4"/>
+  <text x="220" y="238" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#555">TODO: world model visual</text>
+</svg>

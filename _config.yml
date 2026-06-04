@@ -1,0 +1,20 @@
+title: Victory Chianumba
+description: AI safety research engineering, with a current focus on mechanistic interpretability.
+baseurl: ""
+url: "https://VictoryChianumba.github.io"
+
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - .jekyll-cache
+  - assets/img

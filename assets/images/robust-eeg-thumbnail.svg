@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="300" viewBox="0 0 440 300" role="img" aria-label="TODO replace with robust EEG thumbnail">
+  <rect width="440" height="300" fill="#f0f6f2"/>
+  <rect x="28" y="28" width="386" height="246" fill="#ffffff" stroke="#bfd3c4"/>
+  <path d="M45 155 H82 L96 118 L122 205 L150 70 L180 210 L205 143 L235 143 L254 115 L282 188 L310 98 L340 155 H395" fill="none" stroke="#28784d" stroke-width="5"/>
+  <text x="220" y="250" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#555">TODO: EEG robustness visual</text>
+</svg>

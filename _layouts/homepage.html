@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+    <link rel="stylesheet" href="{{ '/assets/css/homepage.css' | relative_url }}">
+  </head>
+  <body>
+    <table class="page"><tbody>
+      <tr><td>
+        <table class="intro"><tbody>
+          <tr>
+            <td class="bio">
+              <p class="name">Victory Chianumba</p>
+              <p>I work on mechanistic interpretability and AI safety research engineering. My current focus is on understanding how sparse autoencoders fail when imported from language models to other substrates, and on building tooling that makes those failures visible. I have an MSc in AI for Engineering and Design from the University of Bath, with a thesis on architectural biases in EEG-based neural networks. I'm based in Bath, UK. Recently I've been building interpretability tooling for transformer world models and investigating factored sparse autoencoders for LLM concept manifolds — both projects below.</p>
+              <p class="links">
+                <a href="https://github.com/VictoryChianumba">GitHub</a> &nbsp;/&nbsp;
+                <a href="mailto:chianumbav@icloud.com">Email</a> &nbsp;/&nbsp;
+                <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+              </p>
+            </td>
+            <td class="photo-cell">
+              <img class="profile" src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Victory Chianumba">
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table class="section"><tbody>
+          <tr><td><h2 id="projects">Projects</h2></td></tr>
+        </tbody></table>
+
+        <table class="projects"><tbody>
+          <tr>
+            <td class="thumb"><img src="{{ '/assets/images/wm-thumbnail.svg' | relative_url }}" alt="TODO: replace with world model project thumbnail"></td>
+            <td class="project-copy">
+              <span class="project-title"><a href="{{ '/projects/wm-visualizer/' | relative_url }}">Interpretability tooling for IRIS-class world models</a></span>
+              <br>
+              <strong>Victory Chianumba</strong>
+              <br>
+              <em>Personal project, 2026</em>
+              <br>
+              <a href="{{ '/2026/06/03/wm-visualizer/' | relative_url }}">Blog post</a> /
+              <a href="https://github.com/VictoryChianumba/world-model-interpretability">GitHub</a> /
+              <a href="https://github.com/VictoryChianumba/world-model-interpretability/blob/main/FINDINGS.md">FINDINGS.md</a>
+              <p>TL;DR: Built a working SAE feature explorer for an Atari world model and found that activation-magnitude ranking surfaces the wrong features on this substrate. The worked case study: feature #1364, the top-magnitude feature, is a persistent ball-flight tracker and the strongest anti-collision feature in the top 50, while the real collision detectors rank lower.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="thumb"><img src="{{ '/assets/images/factored-thumbnail.svg' | relative_url }}" alt="TODO: replace with factored SAE project thumbnail"></td>
+            <td class="project-copy">
+              <span class="project-title"><a href="{{ '/projects/factored-sae/' | relative_url }}">Factored sparse autoencoders for LLM concept manifolds</a></span>
+              <br>
+              <strong>Victory Chianumba</strong>
+              <br>
+              <em>Personal project, 2026</em>
+              <br>
+              <a href="https://github.com/VictoryChianumba/sae-manifold-experiments/blob/main/WRITEUP.md">WRITEUP.md</a> /
+              <a href="https://github.com/VictoryChianumba/sae-manifold-experiments">GitHub</a> /
+              <a href="https://arxiv.org/abs/2604.28119">Goodfire paper</a>
+              <p>TL;DR: Tested whether factored "atlas-of-charts" SAEs capture curved concept manifolds better than standard linear dictionaries. Found a narrow positive result on geography, several honest negatives elsewhere, and a methodological warning about soft-routing leakage in MoE-style SAE evaluation.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="thumb"><img src="{{ '/assets/images/trench-thumbnail.png' | relative_url }}" alt="trench terminal interface thumbnail"></td>
+            <td class="project-copy">
+              <span class="project-title"><a href="{{ '/projects/trench/' | relative_url }}">trench — a terminal UI for following AI research</a></span>
+              <br>
+              <strong>Victory Chianumba</strong>
+              <br>
+              <em>Open-source tool, active</em>
+              <br>
+              <a href="{{ '/projects/trench/' | relative_url }}">Project page</a> /
+              <a href="https://github.com/VictoryChianumba/trench">GitHub</a>
+              <p>TL;DR: A keyboard-driven terminal feed reader for arXiv, HuggingFace daily papers, OpenReview, CORE, and research blogs. It reads papers inline, renders LaTeX and figures, and keeps triage state across sessions.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="thumb"><img src="{{ '/assets/images/robust-eeg-thumbnail.svg' | relative_url }}" alt="TODO: replace with robust EEG project thumbnail"></td>
+            <td class="project-copy">
+              <span class="project-title"><a href="{{ '/projects/robust-eeg-models/' | relative_url }}">Adversarial attacks that evade explanation-based monitoring in EEG classifiers</a></span>
+              <br>
+              <strong>Victory Chianumba</strong>
+              <br>
+              <em>MSc thesis work, University of Bath</em>
+              <br>
+              <a href="{{ '/2026/06/04/eeg-explanation-monitoring/' | relative_url }}">Blog post</a> /
+              <a href="{{ '/projects/robust-eeg-models/' | relative_url }}">Project page</a> /
+              <a href="https://github.com/VictoryChianumba/robust-eeg-models">GitHub</a>
+              <p>TL;DR: Low-pass adversarial perturbations can flip an EEG classifier's prediction while leaving its Integrated Gradients explanation essentially intact. That creates a blind spot for explanation-based attack monitors: the explanation appears stable even when the prediction has been corrupted.</p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table class="section"><tbody>
+          <tr><td><h2 id="writing">Writing</h2></td></tr>
+        </tbody></table>
+        <table class="news"><tbody>
+          {% for post in site.posts %}
+          <tr>
+            <td class="date">{{ post.date | date: "%b %Y" }}</td>
+            <td><a href="{{ post.url | relative_url }}">{{ post.title }}</a></td>
+          </tr>
+          {% endfor %}
+        </tbody></table>
+
+        <footer>
+          <p>© {{ site.time | date: "%Y" }} Victory Chianumba</p>
+          <p>Last updated: Jun 2026</p>
+          <p class="credit">Design adapted from <a href="https://jonbarron.info">Jon Barron</a>.</p>
+        </footer>
+      </td></tr>
+    </tbody></table>
+  </body>
+</html>

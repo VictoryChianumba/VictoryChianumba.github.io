@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="420" viewBox="0 0 420 420" role="img" aria-label="TODO replace with profile photo">
+  <rect width="420" height="420" rx="210" fill="#eeeeee"/>
+  <circle cx="210" cy="160" r="70" fill="#c9c9c9"/>
+  <path d="M95 350c22-72 64-108 115-108s93 36 115 108" fill="#c9c9c9"/>
+  <text x="210" y="390" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#666">TODO: profile photo</text>
+</svg>
