@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Interpretability tooling for IRIS-class world models"
-summary: "A working SAE feature explorer for IRIS world models, with a worked case study showing that activation-magnitude feature ranking, the LLM-SAE default, surfaces the wrong kind of feature on a world model."
+summary: "A working SAE feature explorer for IRIS world models, with a worked case study showing that activation-magnitude ranking, the LLM-SAE default, surfaces persistent state-trackers over event detectors on a world model."
 status: "Closed"
 permalink: /projects/wm-visualizer/
 ---
