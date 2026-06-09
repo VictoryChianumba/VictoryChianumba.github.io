@@ -1,16 +1,16 @@
 ---
 layout: project
-title: "trench — a terminal UI for following AI research"
+title: "One-Research — a terminal UI for following AI research"
 summary: "A keyboard-driven terminal app that pulls arXiv, HuggingFace daily papers, OpenReview, and research blogs into one feed, and reads the papers inline, LaTeX and all, without ever opening a browser."
 status: "Active · open source (AGPL-3.0)"
-permalink: /projects/trench/
+permalink: /projects/one-research/
 ---
 
-Status: Active · open source (AGPL-3.0). Working and self-hosted. [Source on GitHub](https://github.com/VictoryChianumba/trench).
+Status: Active · open source (AGPL-3.0). Working and self-hosted. [Source on GitHub](https://github.com/VictoryChianumba/one-research).
 
-![trench terminal interface](/assets/images/trench-thumbnail.png)
+![One-Research terminal interface](/assets/images/one-research-thumbnail.png)
 
-trench is a research-feed reader that lives entirely in the terminal. It aggregates arXiv (the full ~155-category taxonomy is browsable), HuggingFace daily papers, OpenReview, CORE, and arbitrary RSS/Atom feeds into a single keyboard-driven interface, then lets you triage what shows up — Inbox, Queued, Deep Read, Archived — with single keystrokes that persist across sessions. The thing I most wanted from it was to stop bouncing between twenty browser tabs and a PDF reader: trench opens papers *in place*, rendering LaTeX, math, tables, and figures into a vim-style reading pane with bookmarks, highlights, and per-paper notes.
+One-Research is a research-feed reader that lives entirely in the terminal. It aggregates arXiv (the full ~155-category taxonomy is browsable), HuggingFace daily papers, OpenReview, CORE, and arbitrary RSS/Atom feeds into a single keyboard-driven interface, then lets you triage what shows up — Inbox, Queued, Deep Read, Archived — with single keystrokes that persist across sessions. The thing I most wanted from it was to stop bouncing between twenty browser tabs and a PDF reader: One-Research opens papers *in place*, rendering LaTeX, math, tables, and figures into a vim-style reading pane with bookmarks, highlights, and per-paper notes.
 
 It's built in Rust with no async runtime — plain OS threads and blocking I/O throughout. The cache and the workflow-state store are siblings that both load from disk at startup, so the UI paints instantly from the last session while network fetches run on a background thread and stream in over channels. Beyond the feed, it grows the features I actually use day to day: a fuzzy, relevance-ranked search with field scoping (`au:vaswani year:2017 attention`), an arXiv subject browser, AI-assisted source discovery, Semantic Scholar citation enrichment, an in-app chat pane (Claude or GPT) scoped to the selected paper, and runtime themes.
 
@@ -28,4 +28,4 @@ It's built in Rust with no async runtime — plain OS threads and blocking I/O t
 
 ## Links
 
-- [Source: https://github.com/VictoryChianumba/trench](https://github.com/VictoryChianumba/trench)
+- [Source: https://github.com/VictoryChianumba/one-research](https://github.com/VictoryChianumba/one-research)
