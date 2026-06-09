@@ -6,7 +6,7 @@ status: "Closed"
 permalink: /projects/factored-sae/
 ---
 
-Status: Closed. Writeup at [WRITEUP.md](https://github.com/VictoryChianumba/sae-manifold-experiments/blob/main/WRITEUP.md). Code at [GitHub](https://github.com/VictoryChianumba/sae-manifold-experiments).
+Status: Closed. Writeup at [WRITEUP.md](https://github.com/VictoryChianumba/sae-manifold-experiments/blob/main/prototype/WRITEUP.md). Code at [GitHub](https://github.com/VictoryChianumba/sae-manifold-experiments).
 
 Built and evaluated a factored SAE architecture inspired by Goodfire's "Do Sparse Autoencoders Capture Concept Manifolds?" The architecture replaces the standard SAE's dictionary of straight directions with a soft router over multiple "charts" plus per-chart nonlinear decoders, on the hypothesis that curved local charts could capture concept manifolds (years as helix, geography as sphere, colors as wheel) that linear dictionaries can only tile through "shattering" and "dilution." Ran the fair-comparison protocol on SmolLM2-135M for iteration and Llama 3.1-8B for the headline numbers, with 10 seeds for statistical robustness.
 
@@ -27,6 +27,6 @@ The headline result is narrow. After correcting a matched-dimension protocol bug
 
 ## Links
 
-- [WRITEUP.md: detailed writeup with bug-find-and-recovery arc](https://github.com/VictoryChianumba/sae-manifold-experiments/blob/main/WRITEUP.md)
+- [WRITEUP.md: detailed writeup with bug-find-and-recovery arc](https://github.com/VictoryChianumba/sae-manifold-experiments/blob/main/prototype/WRITEUP.md)
 - [GitHub repository](https://github.com/VictoryChianumba/sae-manifold-experiments)
 - [Goodfire's original paper (Bhalla et al. 2026)](https://arxiv.org/abs/2604.28119)
